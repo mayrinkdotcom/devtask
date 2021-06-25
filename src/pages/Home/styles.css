@@ -1,0 +1,152 @@
+.wrapper {
+  background-image: linear-gradient(128.75deg, #ff5c00 0%, #b600d8 77.96%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5vw;
+  align-items: center;
+}
+.navList {
+  list-style: none;
+  display: flex;
+}
+.navItem {
+  margin: 0 8px;
+}
+.register {
+  display: none;
+}
+.cta {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff9f0a;
+  border-radius: 41px;
+  color: #f8f8f8;
+}
+
+.cta-border {
+  background-color: transparent;
+  border: 1px solid #f8f8f8;
+}
+.cta-purple {
+  background-color: #bf5af2;
+}
+@media screen and (min-width: 500px) {
+  .register {
+    display: inline;
+  }
+}
+.main-home {
+    display: grid;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+  color: #f2f2f2;
+  padding: 30px 5vw;
+}
+.subtitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 109%;
+}
+.text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+.ctas {
+  display: flex;
+  grid-gap: 8px;
+}
+
+@media screen and (min-width: 800px) {
+  .subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;    
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .title {
+    font-size: 42px;
+  }
+  .text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .ctas {
+    grid-gap: 15px;
+  }
+}
+@media screen and (min-width: 1400px) {
+    .title {
+        font-size: 52px;
+    }
+    .ctas {
+      grid-gap: 20px;
+    }
+}
+.container-home-image {
+    margin: auto;
+    position: relative;
+    z-index: 9999;
+}
+.home-img {
+    width: 300px;
+}
+.floor {
+    z-index: -999;
+    position: absolute;
+    left: -100vw;
+    bottom: -190%;
+    width: 200vw;
+    height: 500px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+@media screen and (min-width: 800px) {
+    .home-img {
+        width: 400px;
+    }
+    .floor {
+        bottom: -145%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-home {
+        margin: 2em 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container {
+        margin: auto;
+    }
+    .home-img {
+        width: 600px;
+    }
+    .floor {
+        display: none;
+    }
+}

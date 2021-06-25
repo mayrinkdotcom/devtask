@@ -1,0 +1,43 @@
+.wrapper-lines {
+    background-image: url('../../assets/images/Strip-Patterns.svg'),
+        linear-gradient(128.75deg, #ff5c00 0%, #b600d8 77.96%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 100%;
+    max-width: 100vw;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 640px;
+  margin-top: 3rem;
+  background: white;
+  box-shadow: 10px 40px 50px -20px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 2rem
+}
+
+.card-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+.register-acc,
+.forgot-pass {
+    cursor: pointer;
+    font-size: 14px;
+}
+.register-acc span {
+    color: #b600d8;
+}
